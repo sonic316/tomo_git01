@@ -7,18 +7,26 @@
     <title>Document</title>
   </head>
   <body>
-    こっちは使わないかも
+    <p>こっちは使わないかも</p>
     <script>
-      //   const x = 3;
-      const x = parseInt(window.prompt('数字を入力してください'));
+      const answer = parseInt(window.prompt('数字を入力してください'));
+      console.log(answer);
 
-      if (x < 5) {
-        alert('5より小さいです');
-      } else if (x === 5) {
-        alert('5ぴったりです');
-      } else {
-        alert('5より大きいです');
-      }
+      const checkType = (answer) => {
+        if (isNaN(answer)) {
+          alert('数字を入力してください');
+          return;
+        }
+
+        if (answer < 5) {
+          document.write('5より小さいです');
+        } else if (answer === 5) {
+          document.write('5ぴったりです');
+        } else {
+          document.write('5より大きいです');
+        }
+      };
+      checkType(answer);
     </script>
   </body>
 </html>
