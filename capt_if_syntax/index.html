@@ -7,26 +7,46 @@
     <title>Document</title>
   </head>
   <body>
-    <p>こっちは使わないかも</p>
+    <!-- <p>こっちは使わないかも</p> -->
     <script>
-      const answer = parseInt(window.prompt('数字を入力してください'));
-      console.log(answer);
+      const answer = parseInt(window.prompt('1+1の答えは？'));
+      document.write(answer === 2 ? '正解です' : '不正解です');
 
-      const checkType = (answer) => {
-        if (isNaN(answer)) {
-          alert('数字を入力してください');
-          return;
-        }
+      /*       const choice = parseInt(prompt('1,2,3のどれか選んでください'));
 
-        if (answer < 5) {
-          document.write('5より小さいです');
-        } else if (answer === 5) {
-          document.write('5ぴったりです');
-        } else {
-          document.write('5より大きいです');
-        }
-      };
-      checkType(answer);
+      switch (choice) {
+        case 1:
+          document.write('大吉です');
+          break;
+        case 2:
+          document.write('中吉です');
+          break;
+        case 3:
+          document.write('小吉です');
+          break;
+        default:
+          document.write('1～3から選んでください');
+          break;
+      } */
+
+      // const answer = parseInt(window.prompt('数字を入力してください'));
+      // console.log(answer);
+
+      // const checkType = (answer) => {
+      //   if (isNaN(answer)) {
+      //     alert('数字を入力してください');
+      //     return;
+      //   }
+
+      //   if (answer < 5) {
+      //     document.write('5より小さいです');
+      //   } else if (answer === 5) {
+      //     document.write('5ぴったりです');
+      //   } else {
+      //     document.write('5より大きいです');
+      //   }
+      // };
+      // checkType(answer);
     </script>
   </body>
 </html>
